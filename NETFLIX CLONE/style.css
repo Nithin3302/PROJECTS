@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("assets/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+.main .box {
+  /* dummy box is made so that text can be added and also to adjust opacity */
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  display: flex;
+  /* magrin auto brings the nav bar ie 80vw to the center */
+  margin: auto;
+  /* spacee between gives a space between the items and brings each items to corner inside the nav bar that would make the website responsive*/
+  justify-content: space-between;
+  max-width: 60vw;
+  align-items: center;
+  height: 62px;
+  position: relative;
+  z-index: 10;
+}
+nav img {
+  width: 144px;
+  position: relative;
+  z-index: 10;
+}
+.hero-buttons {
+  /* By giving dispay flex we can change padding text size etc of buttons or boxes without affecting it */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+.seperation {
+  height: 7px;
+  background-color: rgb(36, 34, 34);
+  position: relative;
+  z-index: 20;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid red;
+}
+.main input {
+  background-color: rgba(23, 23, 23, 0.7);
+  color: white;
+  font-weight: 200;
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 251, 251, 0.5);
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 65vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 565px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0px;
+  width: 560px;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+section.first > div :first-child {
+  font-size: 35px;
+  font-weight: bolder;
+}
+section.first > div :nth-child(2) {
+  font-size: 15px;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.faqbox {
+  transition: all 0.1s ease-out;
+  font-size: 24px;
+  display: flex;
+  background-color: rgb(58, 56, 56);
+  padding: 18px;
+  max-width: 63vw;
+  margin: 5px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.faqbox:hover {
+  background-color: rgb(128, 123, 123);
+}
+.faqbox svg {
+  filter: invert(1);
+}
+footer {
+  color: white;
+  margin: auto;
+  max-width: 60vw;
+  padding: 14px;
+}
+.questions {
+  padding: 34px 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.footer a {
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    gap: 25px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+  .secImg img {
+    width: 305px;
+  }
+  .secImg video {
+    width: 300px;
+  }
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  footer {
+    max-width: 90vw;
+  }
+  .footer-item {
+    align-items: center;
+  }
+  section.first > div :first-child {
+    font-size: 23px;
+  }
+  section.first > div :nth-child(2) {
+    font-size: 13px;
+  }
+  .faqbox {
+    transition: all 1s ease-out;
+    font-size: 13px;
+    display: flex;
+    padding: 10px;
+    max-width: 80vw;
+  }
+  .questions {
+    padding: 34px 0;
+    font-size: 15px;
+  }
+  .live {
+    bottom: 50px;
+  }
+  .first {
+    max-width: 69vw;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 23px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 15px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 10px;
+}
+}
