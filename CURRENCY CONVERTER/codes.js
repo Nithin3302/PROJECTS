@@ -8,7 +8,7 @@ const countryList = {
   AOA: "AO",
   AQD: "AQ",
   ARS: "AR",
-  AUD: "AU",
+  AUD: "AU", 
   AZN: "AZ",
   BAM: "BA",
   BBD: "BB",
